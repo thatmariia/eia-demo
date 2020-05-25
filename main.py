@@ -25,10 +25,12 @@ def upload_data_page():
 
 
 # preprocessing page
+@app.route('/preprocessing')
 def preprocessing_overview_page():
     return 'Preprocess your data here!'
 
 
 # report page
+@app.route('/feedback_report')
 def report_page():
     return 'Here you can find the report'
