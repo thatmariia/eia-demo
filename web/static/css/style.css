@@ -5,10 +5,16 @@ html body {
     height: 100vh;
 }
 
+.container {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0px;
+}
+
 /*== Login page ==*/
 .center-container {
     background: white;
     border-radius: 25px;
     padding: 40px;
-    width: 50%;
+    width: 30%;
 }

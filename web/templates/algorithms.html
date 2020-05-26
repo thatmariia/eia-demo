@@ -1,17 +1,18 @@
 {% extends "snippets/page_template.html" %}
 {% block content %}
+    {% include "snippets/navbar.html" %}
 
-<head>
-    <h1> Some algorithms </h1>
-</head>>
+    <head>
+        <h1> Some algorithms </h1>
+    </head>>
 
-<body>
+    <body>
 
     {% for algorithm in algorithms %}
         <h1> {{ algorithm.name }}        </h1>
         <p>  {{ algorithm.description }} </p>
     {% endfor %}
 
-</body>
+    </body>
 
 {% endblock %}
