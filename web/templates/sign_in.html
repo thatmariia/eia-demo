@@ -1,5 +1,22 @@
-{% extends "page_template.html" %}
-{% block content %}
-    <h1>A nice sign in page</h1>
+<!-- This is the template for the login page -->
 
+{% extends "snippets/page_template.html" %}
+{% block content %}
+    <div style="display:flex;justify-content:center;align-items:center;height: 100%">
+        <div class="login-container">
+            <form>
+                <h1>Login</h1>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button onclick="location.href='/'" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}

@@ -1,0 +1,14 @@
+
+/*== General Layout ==*/
+html body {
+    background-color: lightgrey;
+    height: 100vh;
+}
+
+/*== Login page ==*/
+.login-container {
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    width: 50%;
+}
