@@ -1,4 +1,17 @@
 {% extends "page_template.html" %}
 {% block content %}
-    <h1>Some algorithms</h1>
+
+<head>
+    <h1> Some algorithms </h1>
+</head>>
+
+<body>
+
+    {% for algorithm in algorithms %}
+        <h1> {{ algorithm.name }}        </h1>
+        <p>  {{ algorithm.description }} </p>
+    {% endfor %}
+
+</body>
+
 {% endblock %}

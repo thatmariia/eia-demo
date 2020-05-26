@@ -1,3 +1,5 @@
+from Algorithm import *
+
 from flask import Flask
 from flask import render_template
 
@@ -21,7 +23,7 @@ def sign_in_page():
 # overview of algorithms
 @app.route('/algorithms')
 def algorithms_page():
-    return render_template('algorithms.html', title="Algorithms")
+    return render_template('algorithms.html', title="Algorithms", algorithms=get_algorithms())
 
 
 # upload data page
