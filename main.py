@@ -42,3 +42,9 @@ def preprocessing_overview_page():
 @app.route('/feedback_report')
 def report_page():
     return render_template('feedback_report.html', title="Feedback Report")
+
+
+# profile page
+@app.route('/profile')
+def profile_page():
+    return render_template('profile.html', title="Profile")
