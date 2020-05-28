@@ -11,7 +11,7 @@ app = Flask(__name__,
 
 @app.route('/')
 def hello_world():
-    return render_template('home.html', title="Home")
+    return render_template('home2.html', title="Home") # changed to home2 for now
 
 
 # sign in page
