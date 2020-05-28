@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source Code Pro">
         <style>
             body{
                 background-image: url("http://mariia.me/wp-content/uploads/2020/05/login.png");
@@ -21,19 +23,49 @@
                 position: absolute;
                 top: 1275px;
                 left: 1215px;
-
             }
 
             a:hover, a:active {
-                  background-color: #ffffff00;
-                  color: #ffffff00;
+                background-color: #ffffff00;
+                color: #ffffff00;
             }
+
+            input{
+                background-color: #ffffff00;
+                border: 2px #ffffff00;
+                height: 80px;
+                width: 850px;
+                font-family: "Source Code Pro", serif;
+                color: #7066ad;
+                font-size: 30pt;
+                display: inline-block;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            input[type="text"]{
+                position: absolute;
+                top: 630px;
+                left: 950px;
+            }
+
+            input[type="password"]{
+                position: absolute;
+                top: 930px;
+                left: 950px;
+            }
+
         </style>
 
     </head>
 
     <body>
-        <a href="/algorithms">Sign in</a><br>
+
+    <input type="text" name="Username">
+    <input type="password" name="Password">
+    <a href="/algorithms">Sign in</a><br>
 
     </body>
 </html>
