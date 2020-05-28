@@ -11,14 +11,14 @@ app = Flask(__name__,
 
 @app.route('/')
 def hello_world():
-    return render_template('home2.html', title="Home")
+    return render_template('home.html', title="Home")
     # NOTE:: changed to home2 for now
 
 
 # sign in page
 @app.route('/sign_in')
 def sign_in_page():
-    return render_template('sign_in2.html', title="Sign in")
+    return render_template('sign_in.html', title="Sign in")
     # NOTE:: changed to sign_in2 for now
 
 

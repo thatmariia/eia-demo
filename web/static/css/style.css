@@ -2,7 +2,11 @@
 /*== General Layout ==*/
 html body {
     background-color: lightgrey;
-    height: 100vh;
+    height: 80vh;
+    background-image: url("http://mariia.me/wp-content/uploads/2020/05/home_2.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -11,10 +15,50 @@ html body {
     padding: 0px;
 }
 
+.navbar {
+    height: 9%;
+    background-color: ghostwhite;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 8px 60px 12px 40px;
+    -moz-box-shadow:    2px 4px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 4px 5px 0px #ccc;
+    box-shadow:         2px 4px 5px 0px #ccc;
+}
+
+.logo {
+    background-image: url("http://mariia.me/wp-content/uploads/2020/05/logo.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /*== Login page ==*/
 .center-container {
-    background: white;
+    background: ghostwhite;
     border-radius: 25px;
     padding: 40px;
     width: 30%;
+    -moz-box-shadow:    2px 4px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 4px 5px 0px #ccc;
+    box-shadow:         2px 4px 5px 0px #ccc;
+}
+
+/*== Home page ==*/
+.home {
+    height: 94%;
+    background-image: url("http://mariia.me/wp-content/uploads/2020/05/home_3.png");
+    background-position: center center;
+    background-size: contain;
+    background-origin: content-box;
+    padding: 5%;
+    background-repeat: no-repeat;
+    margin: 100px 200px 10px 10px;
+}
+
+.home-button {
+    position: relative;
+    left: 88%;
+    top: 68%;
+    font-size: 1.5rem;
 }
