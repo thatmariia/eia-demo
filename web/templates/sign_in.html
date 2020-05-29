@@ -9,17 +9,24 @@
             <!-- The form needs to filled in with 'something' for it to redirect -->
 
             <form>
-                <h1>Login</h1>
+                <h1 class="text">Welcome</h1>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
+                    <label class="text" for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                            placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
+                    <label class="text" for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <button onclick="location.href='/'" class="btn btn-primary">Submit</button>
+                <!-- why not centered? -->
+                <div>
+                    <label class="small-text">Don't have an account yet?</label>
+                    <a class="small-clickable-text" href="#">Sign Up</a>
+                </div>
+                <div>
+                    <button onclick="location.href='/'" class="btn btn-primary">Sign In</button>
+                </div>
             </form>
         </div>
     </div>

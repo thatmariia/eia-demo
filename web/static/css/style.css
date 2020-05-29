@@ -1,10 +1,12 @@
 /*== defining colors ebf0f2  ==*/
 :root {
     --main-color: #ebf0f2 !important;
-    --inputtext-color: #7066ad;
+    --highlighted-text-color: #7066ad;
+    --regulartext-color: #7d7d7d;
     --neushadow: -9px -9px 30px white, 9px 9px 30px #d2d9e6;
     --neushadow-inner: inset -9px -9px 30px white, inset 9px 9px 30px #d2d9e6;
     --neushadow-btn: -5px -5px 15px white, 5px 5px 15px #bec6d2;
+    --neushadow-btn-pressed: 0 0 15px white, 0 0 15px #bec6d2;
     --gradient-start-color: #b12f7e;
     --gradient-end-color: #4c72ad;
 }
@@ -35,8 +37,25 @@ html body {
     box-shadow:         var(--neushadow);
 }
 
-.nav-item {
+.nav-item, .nav-item:hover, .text, .small-text, .small-text:hover {
     font-family: "Source Code Pro", serif;
+    color: var(--regulartext-color);
+    font-weight: 300;
+}
+
+.nav-item:hover, .small-clickable-text:hover {
+    text-decoration: underline;
+}
+
+.small-text {
+    font-size: 75%;
+}
+
+.small-clickable-text, .small-clickable-text:hover {
+    font-family: "Source Code Pro", serif;
+    font-size: 75%;
+    color: var(--highlighted-text-color);
+    font-weight: 400;
 }
 
 .form-control, .form-control:focus {
@@ -44,7 +63,8 @@ html body {
     border: 0 transparent;
     border-radius: 10px;
     font-family: "Source Code Pro", serif;
-    color: var(--inputtext-color);
+    color: var(--highlighted-text-color);
+    font-weight: 300;
     -moz-box-shadow:    var(--neushadow-inner);
     -webkit-box-shadow: var(--neushadow-inner);
     box-shadow:         var(--neushadow-inner);
@@ -61,13 +81,18 @@ html body {
     border: 0 transparent;
     border-radius: 10px;
     padding: 8px 15px 5px;
-
     font-family: "Amanise Web", serif;
     color: white;
     -moz-box-shadow:    var(--neushadow-btn);
     -webkit-box-shadow: var(--neushadow-btn);
     box-shadow:         var(--neushadow-btn);
     outline: none; /*== wtf still has outline ==*/
+}
+
+.btn:hover, .btn-search:hover {
+    -moz-box-shadow:    var(--neushadow-btn-pressed);
+    -webkit-box-shadow: var(--neushadow-btn-pressed);
+    box-shadow:         var(--neushadow-btn-pressed);
 }
 
 .btn-search:before {
