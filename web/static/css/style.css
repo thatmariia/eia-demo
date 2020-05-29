@@ -7,8 +7,7 @@
     --neushadow-inner: inset -9px -9px 30px white, inset 9px 9px 30px #d2d9e6;
     --neushadow-btn: -5px -5px 15px white, 5px 5px 15px #bec6d2;
     --neushadow-btn-pressed: 0 0 15px white, 0 0 15px #bec6d2;
-    --gradient-start-color: #b12f7e;
-    --gradient-end-color: #4c72ad;
+    --gradient: linear-gradient(to right, #b12f7e, #4c72ad);
 }
 /*== General Layout ==*/
 html body {
@@ -77,7 +76,7 @@ html body {
 }
 
 .btn, .btn-search {
-    background-image: linear-gradient(to right, var(--gradient-start-color), var(--gradient-end-color));
+    background-image: var(--gradient);
     border: 0 transparent;
     border-radius: 10px;
     padding: 8px 15px 5px;
@@ -101,12 +100,17 @@ html body {
     font-size: 80%;
 }
 
+.logo{
+    padding-right: 15px;
+}
 
-.logo {
-    background-image: url("http://mariia.me/wp-content/uploads/2020/05/logo_noshadow.png");
-    background-position: center center;
-    background-size: 75%;
-    background-repeat: no-repeat;
+.logotext {
+    font-family: "Amanise Web";
+    color: var(--highlighted-text-color);
+    font-size: 30pt;
+    padding-right: 15px;
+    padding-top: 15px;
+
 }
 
 /*== Login page ==*/
