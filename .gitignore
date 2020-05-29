@@ -2,3 +2,9 @@
 .idea/
 venv/
 __pycache__/*
+
+ai/algorithms/__pycache__/
+ai/preprocessing/__pycache__/
+ai/rawdata/__pycache__/
+ai/report/__pycache__/
+ai/training/__pycache__/

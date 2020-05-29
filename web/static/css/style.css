@@ -1,7 +1,11 @@
-
+/*== defining colors ebf0f2  ==*/
+:root {
+    --main-color: #ebf0f2 !important;
+    --neushadow: -9px -9px 30px white, 9px 9px 30px #d2d9e6;
+}
 /*== General Layout ==*/
 html body {
-    background-color: lightgrey;
+    background-color: var(--main-color);
     height: 80vh;
     background-image: url("http://mariia.me/wp-content/uploads/2020/05/home_2.png");
     background-position: center center;
@@ -16,14 +20,14 @@ html body {
 }
 
 .navbar {
-    height: 9%;
-    background-color: ghostwhite;
+    height: 11%;
+    background-color: var(--main-color);
     border-radius: 30px;
     margin: 20px;
     padding: 8px 60px 12px 40px;
-    -moz-box-shadow:    2px 4px 5px 0px #ccc;
-    -webkit-box-shadow: 2px 4px 5px 0px #ccc;
-    box-shadow:         2px 4px 5px 0px #ccc;
+    -moz-box-shadow:    var(--neushadow);
+    -webkit-box-shadow: var(--neushadow);
+    box-shadow:         var(--neushadow);
 }
 
 .logo {
@@ -35,13 +39,13 @@ html body {
 
 /*== Login page ==*/
 .center-container {
-    background: ghostwhite;
+    background: var(--main-color);
     border-radius: 25px;
     padding: 40px;
     width: 30%;
-    -moz-box-shadow:    2px 4px 5px 0px #ccc;
-    -webkit-box-shadow: 2px 4px 5px 0px #ccc;
-    box-shadow:         2px 4px 5px 0px #ccc;
+    -moz-box-shadow:    var(--neushadow);
+    -webkit-box-shadow: var(--neushadow);
+    box-shadow:         var(--neushadow);
 }
 
 /*== Home page ==*/
