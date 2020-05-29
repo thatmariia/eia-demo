@@ -1,7 +1,9 @@
 /*== defining colors ebf0f2  ==*/
 :root {
     --main-color: #ebf0f2 !important;
+    --inputtext-color: #7066ad;
     --neushadow: -9px -9px 30px white, 9px 9px 30px #d2d9e6;
+    --neushadow-inner: inset -9px -9px 30px white, inset 9px 9px 30px #d2d9e6;
 }
 /*== General Layout ==*/
 html body {
@@ -30,10 +32,25 @@ html body {
     box-shadow:         var(--neushadow);
 }
 
+.nav-item {
+    font-family: "Source Code Pro", serif;
+}
+
+.form-control, .form-control:focus{
+    background-color: var(--main-color);
+    border: 0 #ffffff00;
+    font-family: "Source Code Pro", serif;
+    color: var(--inputtext-color);
+    -moz-box-shadow:    var(--neushadow-inner);
+    -webkit-box-shadow: var(--neushadow-inner);
+    box-shadow:         var(--neushadow-inner);
+    outline: none;
+}
+
 .logo {
-    background-image: url("http://mariia.me/wp-content/uploads/2020/05/logo.png");
+    background-image: url("http://mariia.me/wp-content/uploads/2020/05/logo_noshadow.png");
     background-position: center center;
-    background-size: contain;
+    background-size: 75%;
     background-repeat: no-repeat;
 }
 
