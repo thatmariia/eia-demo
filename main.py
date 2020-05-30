@@ -25,7 +25,7 @@ def sign_in_page():
 # overview of algorithms
 @app.route('/algorithms')
 def algorithms_page():
-    return render_template('algorithms2.html', title="Algorithms", algorithms=get_algorithms())
+    return render_template('algorithms.html', title="Algorithms", algorithms=get_algorithms())
     # NOTE:: changed to algorithms2 for now
 
 

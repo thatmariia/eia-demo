@@ -2,17 +2,18 @@
 {% block content %}
     {% include "snippets/navbar.html" %}
 
-    <head>
-        <h1> Some algorithms </h1>
-    </head>>
+    <h1>AI Algorithms</h1>
+    <p>Don't know what algorithm fits your goals? Take the quiz to find out!</p>
 
-    <body>
-
-    {% for algorithm in algorithms %}
-        <h1> {{ algorithm.name }}        </h1>
-        <p>  {{ algorithm.description }} </p>
-    {% endfor %}
-
-    </body>
+    <div class="row mb-3" style="margin-left: 10%; margin-right: 10%">
+        {% for algorithm in algorithms[0] %}
+            <div class="col-4">
+                <div class="alg">
+                    <h1> {{ algorithm.name }}        </h1>
+                    <p>  {{ algorithm.description }} </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}

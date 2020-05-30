@@ -142,3 +142,13 @@ html body {
     top: 68%;
     font-size: 1.5rem;
 }
+
+/*== Alg ==*/
+.alg {
+    background-color: #ebf0f2;
+    -moz-box-shadow:    var(--neushadow);
+    -webkit-box-shadow: var(--neushadow);
+    box-shadow:         var(--neushadow);
+    padding: 20px;
+    border-radius: 25px;
+}
