@@ -194,3 +194,7 @@ html body {
 .status-box {
     border: 1px solid black;
 }
+
+.check-row {
+    margin: 10px;
+}

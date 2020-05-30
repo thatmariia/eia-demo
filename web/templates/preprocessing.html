@@ -1,6 +1,54 @@
 {% extends "snippets/page_template.html" %}
 {% block content %}
     {% include "snippets/navbar.html" %}
-    <h1>Some magic preprocessing</h1>
+    <div class="alg-text" style="margin-left: 10%; margin-right: 10%">
+        <H1>Preprocessing</H1>
+        <p>Of dataset: <span style="color: var(--highlighted-text-color2); font-weight: bold">my-selected-dataset-name.csv</span>
+        </p>
+        <p>For algorithm: <span style="color: var(--highlighted-text-color2); font-weight: bold">K-means</span></p>
+        <div class="row alg" style="width: 100%">
+            <h1>Step 1 of 2</h1>
+            <p>The columns in the dataset should be blah lorem ipsum dolor sit amet, consectettuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                veniam, quis nostrud execi tation ullamcorper suscipit.</p>
+            <p>Please select the columns from the dataset:</p>
+            <form>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 1
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 2
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 3
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 4
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 5
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 6
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 7
+                </label>
+                <label class="radio-inline check-row">
+                    <input type="checkbox">Colname 8
+                </label>
+            </form>
+        </div>
+        <div class="row alg" style="width: 100%">
+            <h1>Step 2 of 2</h1>
+            <p>The number of clusters bkah also mention that cannot be more than the length of the dataset blahfdf hdf
+                hiwf dfsun.</p>
+            <p>Please select the number of clusters:</p>
+            <div class="form-group">
+                <label class="text" for="clusterNumber">Clusters</label>
+                <input type="password" class="form-control" id="clusterNumber" placeholder="Clusters">
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
