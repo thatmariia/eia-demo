@@ -53,3 +53,8 @@ def profile_page():
 @app.route('/status')
 def status_page():
     return render_template('status.html', title="Status")
+
+
+@app.route('/my_datasets')
+def my_datasets_page():
+    return render_template('my_datasets.html', title="My Datasets")
