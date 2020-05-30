@@ -152,3 +152,21 @@ html body {
     padding: 20px;
     border-radius: 25px;
 }
+
+.alg-header {
+    font-family: "Amanise Web", serif;
+}
+
+.alg-text {
+    font-family: "Source Code Pro", serif;
+    color: var(--regulartext-color);
+    font-weight: 300;
+}
+
+.link-button {
+    color: red;
+}
+
+.horizontal-center {
+    text-align: center;
+}

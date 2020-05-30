@@ -10,9 +10,11 @@
             {% for algorithm in row %}
                 <div class="col-4">
                     <div class="alg">
-                        <h1> {{ algorithm.name }}        </h1>
-                        <p>  {{ algorithm.description }} </p>
-                        <a href="">Read More</a> | <a href="">Choose</a>
+                        <h1 class="alg-header"> {{ algorithm.name }}        </h1>
+                        <p class="alg-text">  {{ algorithm.description }} </p>
+                        <div class="link-button horizontal-center">
+                            <a href="" class="link-button">Read More</a> | <a href="" class="link-button">Choose</a>
+                        </div>
                     </div>
                 </div>
             {% endfor %}

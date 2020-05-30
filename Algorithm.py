@@ -11,15 +11,15 @@ class Algorithm:
 def get_algorithms() -> [Algorithm]:
     # TODO:: put actual legit algorithms here
     algorithms_row_1 = [
-        Algorithm("blah1", "blah blah 1"),
-        Algorithm("blah2", "blah blah 2"),
-        Algorithm("blah3", "blah blah 3")
+        Algorithm("linear regression", "linear approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables)."),
+        Algorithm("K-means", "Partitions observations into k clusters in which each observation belongs to the cluster with the nearest mean."),
+        Algorithm("CNN", "Performs images recognition, images classifications.")
     ]
 
     algorithms_row_2 = [
-        Algorithm("blah4", "blah blah 4"),
-        Algorithm("blah5", "blah blah 5"),
-        Algorithm("blah6", "blah blah 6")
+        Algorithm("Desicion trees", "Creates a model that predicts the value of a target variable by learning simple decision rules inferred from the data features."),
+        Algorithm("PCA", "Reduces the dimensionality of data, increases interpretability while minimizing information loss."),
+        Algorithm("Perceptron", "Decides whether or not an input, represented by a vector of numbers, belongs to some specific class")
     ]
 
     return [algorithms_row_1, algorithms_row_2]
