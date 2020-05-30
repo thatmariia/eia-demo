@@ -51,3 +51,8 @@ def report_page():
 @app.route('/profile')
 def profile_page():
     return render_template('profile.html', title="Profile")
+
+
+@app.route('/status')
+def status_page():
+    return render_template('status.html', title="Status")

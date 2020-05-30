@@ -1,0 +1,16 @@
+{% extends "snippets/page_template.html" %}
+{% block content %}
+    {% include "snippets/navbar.html" %}
+    <div class="row mb-3" style="margin-left: 10%; margin-right: 10%">
+        <div class="col-6">
+            <h1 class="alg-text">Status of training</h1>
+        </div>
+        <div class="col-6">
+            <p class="alg-text">On this page you can find the status of all the training sessions that you are currently
+                executing. There are 4 different status': "pending" if it is waiting for training; "training" when the
+                model is training on the server; "rendering": for when the feedback report is generated; and "done" for
+                when you can see the final results of your trained model.</p>
+        </div>
+    </div>
+
+{% endblock %}
