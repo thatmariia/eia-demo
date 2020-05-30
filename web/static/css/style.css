@@ -2,6 +2,7 @@
 :root {
     --main-color: #ebf0f2 !important;
     --highlighted-text-color: #7066ad;
+    --highlighted-text-color2: #b12f7e;
     --regulartext-color: #7d7d7d;
     --neushadow: -9px -9px 30px white, 9px 9px 30px #d2d9e6;
     --neushadow-inner: inset -9px -9px 30px white, inset 9px 9px 30px #d2d9e6;
@@ -42,7 +43,7 @@ html body {
     font-weight: 300;
 }
 
-.nav-item:hover, .small-clickable-text:hover {
+.nav-item:hover, .small-clickable-text:hover, .link-button:hover {
     text-decoration: underline;
 }
 
@@ -50,11 +51,14 @@ html body {
     font-size: 75%;
 }
 
-.small-clickable-text, .small-clickable-text:hover {
+.small-clickable-text, .small-clickable-text:hover, .link-button, .link-button:hover {
     font-family: "Source Code Pro", serif;
-    font-size: 75%;
     color: var(--highlighted-text-color);
     font-weight: 400;
+}
+
+.small-clickable-text {
+    font-size: 75%;
 }
 
 .form-control, .form-control:focus {
@@ -145,7 +149,7 @@ html body {
 
 /*== Alg ==*/
 .alg {
-    background-color: #ebf0f2;
+    background-color: var(--main-color);
     -moz-box-shadow:    var(--neushadow);
     -webkit-box-shadow: var(--neushadow);
     box-shadow:         var(--neushadow);
@@ -155,17 +159,13 @@ html body {
 
 .alg-header {
     font-family: "Amanise Web", serif;
+    color: var(--highlighted-text-color2);
 }
 
 .alg-text {
     font-family: "Source Code Pro", serif;
     color: var(--regulartext-color);
     font-weight: 300;
-}
-
-.link-button {
-    color: red;
-    font-weight: bold;
 }
 
 .horizontal-center {
