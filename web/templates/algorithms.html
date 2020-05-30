@@ -18,20 +18,20 @@
         </div>
     </div>
 
+    <div class="grid" style="margin-left: 10%; margin-right: 10%">
     {% for row in algorithms %}
-        <div class="row mb-3" style="margin-left: 10%; margin-right: 10%">
-            {% for algorithm in row %}
-                <div class="col-4">
-                    <div class="alg">
-                        <h1 class="alg-header"> {{ algorithm.name }}        </h1>
-                        <p class="alg-text">  {{ algorithm.description }} </p>
-                        <div class="link-button horizontal-center">
-                            <a href="" class="link-button">Read More</a> | <a href="" class="link-button">Choose</a>
-                        </div>
+        {% for algorithm in row %}
+                <!-- wtf happening with the block having borders -->
+                <div class="alg">
+                    <h1 class="alg-header"> {{ algorithm.name }}        </h1>
+                    <p class="alg-text">  {{ algorithm.description }} </p>
+                    <div class="link-button horizontal-center">
+                        <a href="" class="link-button">Read More</a> | <a href="" class="link-button">Choose</a>
                     </div>
                 </div>
+
             {% endfor %}
-        </div>
     {% endfor %}
+    </div>
 
 {% endblock %}

@@ -147,14 +147,28 @@ html body {
     font-size: 1.5rem;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box !important;
+}
+
+.grid {
+    column-count: 3;
+    column-width: 1fr;
+    column-gap: 20px;
+}
+
 /*== Alg ==*/
 .alg {
+    display: inline-block;
     background-color: var(--main-color);
     -moz-box-shadow:    var(--neushadow);
     -webkit-box-shadow: var(--neushadow);
     box-shadow:         var(--neushadow);
     padding: 20px;
     border-radius: 25px;
+    margin-bottom: 20px;
 }
 
 .alg-header {
