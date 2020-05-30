@@ -171,3 +171,12 @@ html body {
 .horizontal-center {
     text-align: center;
 }
+
+.status-bar {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.status-box {
+    border: 1px solid black;
+}
