@@ -3,18 +3,32 @@
     {% include "snippets/navbar.html" %}
     <div class="alg-text" style="margin-left: 10%; margin-right: 10%">
         <H1>Your Datasets</H1>
+    </div>
 
-        <div class="row alg" style="width: 100%">
-            <div class="col-6">
-                <button class="btn btn-primary" style="float: left; margin-right: 10px; border-radius: 30px">+</button>
-                <p style="font-size: 1.5rem">Here the name of the uploaded</p>
-            </div>
-            <div class="col-6" style="float: right">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Overviews
-                </a>
+    <div class="alg-text row mb-3" style="margin-left: 10%; margin-right: 10%">
+        <span class="ds-label" style="background-color: purple">finance</span>
+        <span class="ds-label" style="background-color: darkblue">market</span>
+        <span class="ds-label" style="background-color: darkgreen">production</span>
+        <span class="ds-label btn btn-primary">+</span>
+    </div>
+
+    <div class="dataset alg-text row mb-3" style="margin-left: 10%; margin-right: 10%">
+        <div class="col-6">
+            <button class="btn btn-primary" style="border-radius: 25px; float: left; margin-right: 10px">+</button>
+            <p style="font-size: 1.5rem">Upload more data</p>
+        </div>
+
+        <div class="col-6">
+            <div class="dropdown" style="float: right">
+                <button class="round-button dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose tags
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </div>
         </div>
         <div class="row alg" style="width: 100%">

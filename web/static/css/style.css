@@ -10,6 +10,7 @@
     --neushadow-btn-pressed: 0 0 15px white, 0 0 15px #bec6d2;
     --gradient: linear-gradient(to right, #b12f7e, #4c72ad);
 }
+
 /*== General Layout ==*/
 html body {
     background-color: var(--main-color);
@@ -32,9 +33,9 @@ html body {
     border-radius: 30px;
     margin: 20px;
     padding: 8px 60px 12px 40px;
-    -moz-box-shadow:    var(--neushadow);
+    -moz-box-shadow: var(--neushadow);
     -webkit-box-shadow: var(--neushadow);
-    box-shadow:         var(--neushadow);
+    box-shadow: var(--neushadow);
 }
 
 .nav-item, .nav-item:hover, .text, .small-text, .small-text:hover {
@@ -68,9 +69,9 @@ html body {
     font-family: "Source Code Pro", serif;
     color: var(--highlighted-text-color);
     font-weight: 300;
-    -moz-box-shadow:    var(--neushadow-inner);
+    -moz-box-shadow: var(--neushadow-inner);
     -webkit-box-shadow: var(--neushadow-inner);
-    box-shadow:         var(--neushadow-inner);
+    box-shadow: var(--neushadow-inner);
     outline: none;
 }
 
@@ -86,16 +87,16 @@ html body {
     padding: 8px 15px 5px;
     font-family: "Amanise Web", serif;
     color: white;
-    -moz-box-shadow:    var(--neushadow-btn);
+    -moz-box-shadow: var(--neushadow-btn);
     -webkit-box-shadow: var(--neushadow-btn);
-    box-shadow:         var(--neushadow-btn);
+    box-shadow: var(--neushadow-btn);
     outline: none; /*== wtf still has outline ==*/
 }
 
 .btn:hover, .btn-search:hover {
-    -moz-box-shadow:    var(--neushadow-btn-pressed);
+    -moz-box-shadow: var(--neushadow-btn-pressed);
     -webkit-box-shadow: var(--neushadow-btn-pressed);
-    box-shadow:         var(--neushadow-btn-pressed);
+    box-shadow: var(--neushadow-btn-pressed);
 }
 
 .btn-search:before {
@@ -104,7 +105,7 @@ html body {
     font-size: 80%;
 }
 
-.logo{
+.logo {
     padding-right: 15px;
 }
 
@@ -123,9 +124,9 @@ html body {
     border-radius: 25px;
     padding: 40px;
     width: 30%;
-    -moz-box-shadow:    var(--neushadow);
+    -moz-box-shadow: var(--neushadow);
     -webkit-box-shadow: var(--neushadow);
-    box-shadow:         var(--neushadow);
+    box-shadow: var(--neushadow);
 }
 
 /*== Home page ==*/
@@ -163,9 +164,9 @@ html body {
 .alg {
     display: inline-block;
     background-color: var(--main-color);
-    -moz-box-shadow:    var(--neushadow);
+    -moz-box-shadow: var(--neushadow);
     -webkit-box-shadow: var(--neushadow);
-    box-shadow:         var(--neushadow);
+    box-shadow: var(--neushadow);
     padding: 20px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -197,4 +198,57 @@ html body {
 
 .check-row {
     margin: 10px;
+}
+
+.dataset {
+    background-color: var(--main-color);
+    -moz-box-shadow: var(--neushadow);
+    -webkit-box-shadow: var(--neushadow);
+    box-shadow: var(--neushadow);
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.round-button {
+    padding: 10px;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.round-button:focus {
+    outline: 0px;
+}
+
+.select-button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    -moz-box-shadow: var(--neushadow);
+    -webkit-box-shadow: var(--neushadow);
+    box-shadow: var(--neushadow);
+    border: 0px;
+    color: var(--highlighted-text-color2);
+    font-weight: bold;
+}
+
+.select-button:focus {
+    box-shadow: 0 0 3pt 2pt ghostwhite;
+    outline: 0px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ds-label {
+    font-weight: normal;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin-right: 10px;
 }
