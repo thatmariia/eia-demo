@@ -13,9 +13,10 @@ class TrainingAgent:
     def train(self):
         print("TrainingAgent: self.algorithm.name = ", "_train_" + self.algorithm.name)
 
-        getattr (self, "_train_" + self.algorithm.name) ()  # TODO:: catch errors
+        return getattr (self, "_train_" + self.algorithm.name) ()  # TODO:: catch errors
 
     def _train_kmeans(self):
         k = select_k()
         kmeans_agent = KMeansAgent(data=self.data, k=k, nr_epochs=self.nr_epochs)
-        return kmeans_agent.cluster()
+        kmeans_agent.cluster()
+        return kmeans_agent

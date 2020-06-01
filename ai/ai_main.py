@@ -17,7 +17,7 @@ def run():
 
     # preprocess based on algorithm
     data_preprocessor = DataPreprocessor(algorithm, raw_data)
-    data = data_preprocessor.preprocess()
+    data, map, col_names = data_preprocessor.preprocess()
 
     # train
     training_agent = TrainingAgent(algorithm, data)
@@ -25,8 +25,8 @@ def run():
 
     # generate report
     # TODO:: collect info from classes (like col names and stuff)
-    # TODO:: generate report
-    report_generator = ReportGenerator(algorithm=algorithm)
+    # TODO:: generate report algorithm, data, training_result, maps
+    report_generator = ReportGenerator(algorithm=algorithm, data=data, training_result=training_result, map=map, col_names=col_names)
     report_generator.generate()
 
 run()

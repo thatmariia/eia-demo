@@ -10,19 +10,19 @@ class KMeansAgent:
         """
 
         self.data = data
-
         self.k = k
 
         self.nr_epochs = nr_epochs
 
+        self.kmeans = None
+        self.predicted = None
+
     def cluster(self):
-        kmeans = KMeans (
+        self.kmeans = KMeans(
                 n_clusters=self.k, init='random',
                 n_init=10, max_iter=self.nr_epochs,
                 tol=1e-04, random_state=0
         )
-        predicted = kmeans.fit_predict(self.data)
-
-        return predicted
+        self.predicted = self.kmeans.fit_predict(self.data)
 
 
