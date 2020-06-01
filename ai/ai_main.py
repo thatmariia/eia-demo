@@ -8,7 +8,7 @@ from report.ReportGenerator import ReportGenerator
 def run():
     # get the raw dataset
     # TODO:: ask user for dataset
-    data_fetcher = RawDataFetcher(filename="test_datasets/train.csv")
+    data_fetcher = RawDataFetcher(filename="test_datasets/FoodDelivery.csv")
     raw_data = data_fetcher.fetch()
 
     # get the algorithm

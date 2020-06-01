@@ -8,10 +8,11 @@ class RawDataFetcher:
 
     def fetch(self):
         fileformat = self._get_fileformat()
-        try:
-            return getattr(self, "_fetch_" + fileformat.name)()
-        except:
-            print("No fetcher for this format")
+        return getattr (self, "_fetch_" + fileformat.name) ()
+        #try:
+        #    return getattr(self, "_fetch_" + fileformat.name)()
+        #except:
+        #    print("No fetcher for this format")
 
     def _get_fileformat(self):
         try:
