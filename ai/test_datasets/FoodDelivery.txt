@@ -1,0 +1,3 @@
+data of FoodDelivery:
+
+https://www.kaggle.com/asaumya/k-means-clustering-food-delivery-case-study
