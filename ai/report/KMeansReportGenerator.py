@@ -32,12 +32,13 @@ class KMeansReportGenerator:
 
 
     def combine_data_df(self):
-        df_data = [self.data[i] + [self.predicted[i]] for i in range(len(self.data))]
+        df_data = [np.append(i, j) for i, j in zip(self.data, self.predicted)]
         df_cols = self.col_names + ["Cluster"]
 
         self.df = pd.DataFrame(data=df_data, columns=df_cols)
 
     def reverse_map_df(self):
+        # TODO:: combine with original raw
         inv_map = {}
 
         for col in self.df.columns:

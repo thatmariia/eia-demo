@@ -23,6 +23,7 @@ class DataPreprocessor:
     def _preprocess_kmeans(self):
         kmeans_preprocessor = KMeansPreprocessor(raw_data=self.raw_data)
         kmeans_preprocessor.preprocess()
-        preprocessed_df = kmeans_preprocessor.preprocessed_data
-        unindexed_list = preprocessed_df.values.T.tolist()[1:] # getting rid of index col
-        return list(map(list, zip(*unindexed_list))), kmeans_preprocessor.map, kmeans_preprocessor.column_names
+        #preprocessed_df = kmeans_preprocessor.preprocessed_data
+        #unindexed_list = preprocessed_df.values.T.tolist()[1:] # getting rid of index col
+        return kmeans_preprocessor.preprocessed_data, kmeans_preprocessor.map, kmeans_preprocessor.column_names
+        #return list(map(list, zip(*unindexed_list))), kmeans_preprocessor.map, kmeans_preprocessor.column_names

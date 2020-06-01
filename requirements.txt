@@ -1,6 +1,5 @@
 Flask
 numpy
 matplotlib
-tensorflow
 pandas
 sklearn
