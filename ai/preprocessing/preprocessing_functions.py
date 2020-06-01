@@ -50,4 +50,4 @@ def map_data_to_float(data):
 
         data[col] = data[col].astype (float)
 
-    return data, map
+    return data

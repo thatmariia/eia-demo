@@ -17,16 +17,16 @@ def run():
 
     # preprocess based on algorithm
     data_preprocessor = DataPreprocessor(algorithm, raw_data)
-    data, map, col_names = data_preprocessor.preprocess()
+    data, col_names, filtered_indices = data_preprocessor.preprocess()
 
     # train
     training_agent = TrainingAgent(algorithm, data)
     training_result = training_agent.train()
 
     # generate report
-    # TODO:: collect info from classes (like col names and stuff)
-    # TODO:: generate report algorithm, data, training_result, maps
-    report_generator = ReportGenerator(algorithm=algorithm, data=data, training_result=training_result, map=map, col_names=col_names)
+    report_generator = ReportGenerator(algorithm=algorithm,
+                                       data=data, raw_data=raw_data, filtered_indices=filtered_indices,
+                                       training_result=training_result, col_names=col_names)
     report_generator.generate()
 
 run()

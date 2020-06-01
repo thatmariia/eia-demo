@@ -10,9 +10,11 @@ colors = ["#E49273", "#404E7C", "#70877F", "#C4A77D", "#D1BCE3"]
 
 class KMeansReportGenerator:
 
-    def __init__(self, data, kmeans_agent: KMeansAgent, map, col_names):
+    def __init__(self, data, raw_data, filtered_indices,
+                 kmeans_agent: KMeansAgent, col_names):
         self.data = data
-        self.map = map
+        self.raw_data = raw_data
+        self.filtered_indices = filtered_indices
         self.col_names = col_names
 
         self.predicted = kmeans_agent.predicted
@@ -20,13 +22,13 @@ class KMeansReportGenerator:
         self.k = kmeans_agent.k
 
         self.df = None
+        self.recovered_df = raw_data
 
     def generate(self):
         self.combine_data_df()
         self.plot()
-        self.reverse_map_df()
-        print(self.df)
-        # TODO:: make a graph
+        self.reconstruct_raw_data()
+
 
         # TODO:: reconstruct db
 
@@ -37,16 +39,13 @@ class KMeansReportGenerator:
 
         self.df = pd.DataFrame(data=df_data, columns=df_cols)
 
-    def reverse_map_df(self):
-        # TODO:: combine with original raw
-        inv_map = {}
+    def reconstruct_raw_data(self):
+        self.recovered_df["Cluster"] = np.nan
 
-        for col in self.df.columns:
-            if col in self.map.keys():
-
-                inv_map[col] = {v: k for k, v in self.map[col].items ()}
-                print(inv_map[col])
-                self.df[col] = self.df[col].map(inv_map[col])
+        i = 0
+        for index in self.filtered_indices:
+            self.recovered_df.loc[index, "Cluster"] = self.predicted[i]
+            i += 1
 
     def make_ellipses(self, ax):
         gmm = GaussianMixture(n_components=self.k,

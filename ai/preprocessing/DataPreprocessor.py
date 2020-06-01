@@ -25,5 +25,5 @@ class DataPreprocessor:
         kmeans_preprocessor.preprocess()
         #preprocessed_df = kmeans_preprocessor.preprocessed_data
         #unindexed_list = preprocessed_df.values.T.tolist()[1:] # getting rid of index col
-        return kmeans_preprocessor.preprocessed_data, kmeans_preprocessor.map, kmeans_preprocessor.column_names
+        return kmeans_preprocessor.preprocessed_data, kmeans_preprocessor.column_names, kmeans_preprocessor.filtered_indices
         #return list(map(list, zip(*unindexed_list))), kmeans_preprocessor.map, kmeans_preprocessor.column_names
