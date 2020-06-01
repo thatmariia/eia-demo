@@ -84,8 +84,6 @@ class KMeansReportGenerator:
             ax.add_artist(ell)
             ax.set_aspect('equal', 'datalim')
 
-
-
     def plot(self):
         if len(self.data[0]) > 2:
             # TODO:: maybe also plot for 3d
@@ -107,7 +105,7 @@ class KMeansReportGenerator:
                 y=self.kmeans.cluster_centers_[:, 1],
                 s=250, marker='*',
                 c='red', edgecolor='black',
-                label='centroids'
+                label='Centroids'
         )
 
         self.make_ellipses(ax)
@@ -115,7 +113,6 @@ class KMeansReportGenerator:
         plt.legend (scatterpoints=1)
         plt.xlabel(self.col_names[0])
         plt.ylabel(self.col_names[1])
-        plt.grid ()
         plt.show ()
 
 
