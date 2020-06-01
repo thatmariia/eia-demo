@@ -8,4 +8,4 @@ def select_k():
     print ("Input the number of clusters")
     k = input ()
     # TODO:: check input
-    return k
+    return int(k)

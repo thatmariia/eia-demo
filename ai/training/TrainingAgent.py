@@ -1,4 +1,5 @@
 from KMeansAgent import KMeansAgent
+from KMeansAgent import KMeansAgent
 from training_functions import *
 
 class TrainingAgent:
@@ -17,5 +18,4 @@ class TrainingAgent:
     def _train_kmeans(self):
         k = select_k()
         kmeans_agent = KMeansAgent(data=self.data, k=k, nr_epochs=self.nr_epochs)
-        kmeans_agent.cluster()
-        #return "training..."
+        return kmeans_agent.cluster()

@@ -21,7 +21,7 @@ def run():
 
     # train
     training_agent = TrainingAgent(algorithm, data)
-    training_agent.train()
+    training_result = training_agent.train()
 
     # generate report
     # TODO:: collect info from classes (like col names and stuff)
