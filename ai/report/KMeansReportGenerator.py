@@ -23,14 +23,22 @@ class KMeansReportGenerator:
 
         self.df = None
         self.recovered_df = raw_data
+        self.cluster_df = None
 
     def generate(self):
         self.combine_data_df()
         self.plot()
         self.reconstruct_raw_data()
+        self.get_clusters_df()
 
+        # NOTE:: now can extract
+        # plot picture
+        # reconstructed db with cluster col
+        # means (cluster centers)
 
-        # TODO:: reconstruct db
+    def get_clusters_df(self):
+        self.cluster_df = pd.DataFrame(data=self.kmeans.cluster_centers_, columns=self.col_names)
+        self.cluster_df.index.name = "Cluster"
 
 
     def combine_data_df(self):
