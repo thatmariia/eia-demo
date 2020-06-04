@@ -14,28 +14,28 @@
             <p>Please select the columns from the dataset:</p>
             <form>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 1
+                    <input type="checkbox">Invoice ID
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 2
+                    <input type="checkbox">Branch
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 3
+                    <input type="checkbox">City
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 4
+                    <input type="checkbox">Customer Type
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 5
+                    <input type="checkbox">Gender
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 6
+                    <input type="checkbox">Product line
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 7
+                    <input type="checkbox">Unit Price
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Colname 8
+                    <input type="checkbox">Quantity
                 </label>
             </form>
         </div>
@@ -46,12 +46,12 @@
             <p>Please select the number of clusters:</p>
             <div class="form-group">
                 <label class="text" for="clusterNumber">Clusters</label>
-                <input type="password" class="form-control" id="clusterNumber" placeholder="Clusters">
+                <input type="text" class="form-control" id="clusterNumber" placeholder="Clusters">
             </div>
         </div>
         <div class="row" style="margin-left: 10%; margin-right: 10%">
             <div style="margin-left:auto;margin-right:auto;">
-                <button class="btn btn-primary train">Train</button>
+                <button class="btn btn-primary train" onclick="location.href='/status'">Train</button>
             </div>
         </div>
     </div>

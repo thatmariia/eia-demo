@@ -58,3 +58,13 @@ def status_page():
 @app.route('/my_datasets')
 def my_datasets_page():
     return render_template('my_datasets.html', title="My Datasets")
+
+
+@app.route('/status_complete')
+def status_complete_page():
+    return render_template('statuscomplete.html', title="Status")
+
+
+@app.route('/status_loading')
+def status_loading_page():
+    return render_template('statusloading.html', title="Status")
