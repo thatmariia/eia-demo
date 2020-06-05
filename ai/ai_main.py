@@ -18,6 +18,7 @@ def run():
     # preprocess based on algorithm
     data_preprocessor = DataPreprocessor(algorithm, raw_data)
     data, col_names, filtered_indices = data_preprocessor.preprocess()
+    print(data)
 
     # train
     training_agent = TrainingAgent(algorithm, data)

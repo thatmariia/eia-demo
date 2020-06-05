@@ -68,3 +68,8 @@ def status_complete_page():
 @app.route('/status_loading')
 def status_loading_page():
     return render_template('statusloading.html', title="Status")
+
+
+@app.route('/status_rendering')
+def status_rendering_page():
+    return render_template('statusrendering.html', title="Status")
