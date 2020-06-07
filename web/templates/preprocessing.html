@@ -1,42 +1,41 @@
 {% extends "snippets/page_template.html" %}
 {% block content %}
     {% include "snippets/profilenavbar.html" %}
-    <div class="alg-text" style="margin-left: 10%; margin-right: 10%">
-        <H1>Preprocessing</H1>
-        <p>Of dataset: <span style="color: var(--highlighted-text-color2); font-weight: bold">my-selected-dataset-name.csv</span>
+    <div style="margin-left: 10%; margin-right: 10%">
+        <H1 class="alg-text">Preprocessing</H1>
+        <p class="alg-text">Of dataset: <span style="color: var(--highlighted-text-color2); font-weight: bold">my-selected-dataset-name.csv</span>
         </p>
-        <p>For algorithm: <span style="color: var(--highlighted-text-color2); font-weight: bold">K-means</span></p>
+        <p class="alg-text">For algorithm: <span style="color: var(--highlighted-text-color2); font-weight: bold">K-means</span></p>
         <div class="row alg" style="width: 100%">
-            <h1>Step 1 of 2</h1>
-            <p>The columns in the dataset should be blah lorem ipsum dolor sit amet, consectettuer adipiscing elit, sed
+            <h1 class="preprocessing-text">Step 1 of 2</h1>
+            <p class="alg-text">The columns in the dataset should be blah lorem ipsum dolor sit amet, consectettuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
                 veniam, quis nostrud execi tation ullamcorper suscipit.</p>
-            <p>Please select the columns from the dataset:</p>
+            <p class="alg-text">Please select the columns from the dataset:</p>
             <form>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Customer ID
+                    <input type="checkbox"> Customer ID
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Gender
+                    <input type="checkbox"> Gender
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Age
+                    <input type="checkbox"> Age
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Annual Income (k$)
+                    <input type="checkbox"> Annual Income (k$)
                 </label>
                 <label class="radio-inline check-row">
-                    <input type="checkbox">Spending Score (1-100)
+                    <input type="checkbox"> Spending Score (1-100)
                 </label>
             </form>
         </div>
         <div class="row alg" style="width: 100%">
-            <h1>Step 2 of 2</h1>
-            <p>The number of clusters bkah also mention that cannot be more than the length of the dataset blahfdf hdf
+            <h1 class="preprocessing-text">Step 2 of 2</h1>
+            <p class="alg-text">The number of clusters bkah also mention that cannot be more than the length of the dataset blahfdf hdf
                 hiwf dfsun.</p>
-            <p>Please select the number of clusters:</p>
+            <p class="alg-text">Please select the number of clusters:</p>
             <div class="form-group">
-                <label class="text" for="clusterNumber">Clusters</label>
                 <input type="text" class="form-control" id="clusterNumber" placeholder="Clusters">
             </div>
         </div>
