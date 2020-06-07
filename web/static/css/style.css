@@ -48,6 +48,18 @@ html body {
     text-decoration: underline;
 }
 
+.ds-text {
+    font-family: "Source Code Pro", serif;
+    color: white;
+    font-weight: 300;
+}
+
+.round-button {
+    background-color: var(--main-color);
+    color: var(--regulartext-color);
+    font-weight: 300;
+}
+
 .small-text {
     font-size: 75%;
 }
@@ -143,8 +155,8 @@ html body {
 
 .home-button {
     position: relative;
-    left: 88%;
-    top: 68%;
+    left: 94%;
+    top: 60%;
     font-size: 1.5rem;
 }
 
@@ -175,6 +187,18 @@ html body {
 .alg-header {
     font-family: "Amanise Web", serif;
     color: var(--highlighted-text-color2);
+}
+
+.preprocessing-text {
+    font-family: "Source Code Pro", serif;
+    color: var(--highlighted-text-color);
+    font-weight: 300;
+}
+
+.radio-inline {
+    font-family: "Source Code Pro", serif;
+    color: var(--regulartext-color);
+    font-weight: 300;
 }
 
 .alg-text {

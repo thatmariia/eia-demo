@@ -86,7 +86,7 @@ class KMeansReportGenerator:
 
     def plot(self):
         if len(self.data[0]) > 2:
-            # TODO:: maybe also plot for 3d
+            # TODO:: maybe also plot for 3d writing mor
             return
 
         fig, ax = plt.subplots (figsize=(10, 10))
