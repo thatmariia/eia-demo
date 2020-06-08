@@ -3,14 +3,16 @@
     {% include "snippets/profilenavbar.html" %}
     <div style="margin-left: 10%; margin-right: 10%">
         <H1 class="alg-text">Preprocessing</H1>
-        <p class="alg-text">Of dataset: <span style="color: var(--highlighted-text-color2); font-weight: bold">my-selected-dataset-name.csv</span>
+        <p class="alg-text">Of dataset: <span style="color: var(--highlighted-text-color2); font-weight: bold">Mall Customers.csv</span>
         </p>
         <p class="alg-text">For algorithm: <span style="color: var(--highlighted-text-color2); font-weight: bold">K-means</span></p>
         <div class="row alg" style="width: 100%">
             <h1 class="preprocessing-text">Step 1 of 2</h1>
-            <p class="alg-text">The columns in the dataset should be blah lorem ipsum dolor sit amet, consectettuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                veniam, quis nostrud execi tation ullamcorper suscipit.</p>
+            <p class="alg-text">Chosing which columns to execute the k-means algorithm on is of the highest importance. There are various
+                things to consider when making your choice. First and foremost, take into consideration what your goal
+                is. If your goal is to check on which day of the week sales are the highest, then chosing a column
+                containing day of the week might be a good choice. Second, remove all columns that do not contain useful
+                data (like index or id). An advanced tutorial about chosing columns can be found <a href="#">here</a>.</p>
             <p class="alg-text">Please select the columns from the dataset:</p>
             <form>
                 <label class="radio-inline check-row">
@@ -32,8 +34,9 @@
         </div>
         <div class="row alg" style="width: 100%">
             <h1 class="preprocessing-text">Step 2 of 2</h1>
-            <p class="alg-text">The number of clusters bkah also mention that cannot be more than the length of the dataset blahfdf hdf
-                hiwf dfsun.</p>
+            <p class="alg-text">The number of clusters will greatly influence your results. If you have a certain number of clusters in
+                mind that you want, be sure to choose that. However, if you are looking for the best possible number of
+                clusters, an advanced tutorial on this can be found <a href="">here</a>.</p>
             <p class="alg-text">Please select the number of clusters:</p>
             <div class="form-group">
                 <input type="text" class="form-control" id="clusterNumber" placeholder="Clusters">
